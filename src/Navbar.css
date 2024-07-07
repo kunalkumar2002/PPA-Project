@@ -1,0 +1,15 @@
+/* Custom margins for buttons */
+.button-margin {
+    margin-top: 0.5rem; /* Default top margin for small screens */
+    margin-bottom: 0.5rem; /* Default bottom margin for small screens */
+}
+
+/* Media query for larger screens */
+@media (min-width: 992px) {
+    .button-margin {
+        margin-top: 0; /* Remove top margin */
+        margin-bottom: 0; /* Remove bottom margin */
+        margin-left: 1rem; /* Add left margin */
+        margin-right: 1rem; /* Add right margin */
+    }
+}

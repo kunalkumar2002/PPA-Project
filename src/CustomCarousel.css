@@ -1,0 +1,60 @@
+.custom-carousel-item {
+    min-height: 60vh; /* Ensure the carousel item has a minimum height */
+    padding: 40px 0; /* Add some padding for spacing */
+}
+
+.image-container {
+    max-width: 25%; /* Adjust the max width of the image container */
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    height: auto;
+}
+
+@media (max-width: 991.98px) {
+    .custom-carousel-item {
+        flex-direction: column; /* Stack the items vertically on smaller screens */
+    }
+
+    .image-container {
+        max-width: 50%; /* Make the image container take full width on smaller screens */
+        margin-top: 20px; /* Add margin to separate text and image */
+    }
+}
+
+/* Optional: Style the carousel controls (arrows) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Invert colors for light background */
+}
+
+/* Style the carousel controls (arrows) */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    z-index: 2; /* Ensure controls are above other elements */
+}
+
+.custom-icon {
+    color: black;
+    font-size: 30px;
+}
+/* Carousel Indicators Styling */
+.carousel-indicators {
+    bottom: 0; /* Adjust bottom position */
+    z-index: 2; /* Ensure indicators are above other elements */
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgb(0, 0, 0);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* border: 10px solid #2b1616; */
+}
+
+.carousel-indicators .active {
+    background-color: green;
+}

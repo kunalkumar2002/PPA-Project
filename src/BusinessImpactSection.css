@@ -1,0 +1,10 @@
+.count-up {
+    transition: all 8s ease-in-out;
+}
+
+@media (max-width: 767.98px) {
+    /* Bootstrap's md breakpoint (768px) */
+    .justify-content-md-start {
+        justify-content: flex-start !important; /* Override justify-content for mobile */
+    }
+}

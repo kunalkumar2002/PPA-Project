@@ -1,0 +1,14 @@
+/* In CustomCarousel.css */
+@media (max-width: 991px) {
+    .display-4 {
+        font-size: 2.5rem; /* Smaller heading size on mobile */
+    }
+
+    .lead {
+        font-size: 1rem; /* Smaller paragraph size on mobile */
+    }
+    /* img {
+        height: 35%;
+        width: 35%;
+    } */
+}
