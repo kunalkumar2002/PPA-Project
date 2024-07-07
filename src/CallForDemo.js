@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 
 function CallForDemo() {
     return (
-        <Container fluid className="py-5 bg-light">
+        <Container fluid className="py-5">
             <Row className="justify-content-center text-center">
                 <Col md={8}>
                     <h1>Pellentesque suscipit fringilla libero eu.</h1>

@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import "./Navbar.css";
+import ThemeContext from "./ThemeContext"; // Import the context
 
 function NexcentNavBar() {
+    const { darkMode, toggleDarkMode } = useContext(ThemeContext);
+
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar
+            bg={darkMode ? "dark" : "light"}
+            variant={darkMode ? "dark" : "light"} // Add variant for correct styling
+            expand="lg"
+        >
             <Container>
                 <Navbar.Brand href="/">Nexcent</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -32,6 +39,10 @@ function NexcentNavBar() {
                         </Button>
                     </Nav>
                 </Navbar.Collapse>
+                <Button onClick={toggleDarkMode}>
+                    {" "}
+                    {darkMode ? "Light" : "Dark"} Mode{" "}
+                </Button>
             </Container>
         </Navbar>
     );

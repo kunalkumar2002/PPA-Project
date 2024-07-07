@@ -12,7 +12,7 @@ function ClientShowcase() {
     const logos = [logo1, logo2, logo3, logo4, logo5, logo6];
 
     return (
-        <section className="py-5 bg-light">
+        <section className="py-5">
             <Container>
                 <h2 className="text-center mb-4">Our Clients</h2>
                 <p className="text-center text-muted mb-5">

@@ -12,21 +12,25 @@ import TestimonialComponent from "./TestimonialComponent";
 import BlogComponent from "./BlogComponent";
 import CallForDemo from "./CallForDemo";
 import Footer from "./Footer";
+import { ThemeProvider } from "./ThemeContext"; // Import the provider
+
 function App() {
     return (
-        <div className="App">
-            <NexcentNavBar />
-            <CustomCarousel />
-            <ClientShowcase />
-            <MembershipSection />
-            <PixelgradeSection />
-            <BusinessImpactSection />
-            <FooterDesign />
-            <TestimonialComponent />
-            <BlogComponent />
-            <CallForDemo />
-            <Footer />
-        </div>
+        <ThemeProvider>
+            <div className="App">
+                <NexcentNavBar />
+                <CustomCarousel />
+                <ClientShowcase />
+                <MembershipSection />
+                <PixelgradeSection />
+                <BusinessImpactSection />
+                <FooterDesign />
+                <TestimonialComponent />
+                <BlogComponent />
+                <CallForDemo />
+                <Footer />
+            </div>
+        </ThemeProvider>
     );
 }
 

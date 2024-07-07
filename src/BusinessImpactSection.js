@@ -46,7 +46,7 @@ function BusinessImpactSection() {
                                 {stats.map((stat) => (
                                     <Col
                                         key={stat.label}
-                                        className="text-start text-sm-center p-3 rounded shadow-sm"
+                                        className="text-md-start text-center p-3 rounded shadow-sm"
                                     >
                                         <div class="text-sm-center display-6 fw-medium text-success d-flex justify-content-center justify-content-sm-center">
                                             <img
@@ -64,7 +64,7 @@ function BusinessImpactSection() {
                                                 duration={4.75}
                                             />
                                         </div>
-                                        <div className="text-muted text-sm-center ">
+                                        <div className="text-secondary fw-light  text-sm-center">
                                             {stat.label}
                                         </div>
                                     </Col>
